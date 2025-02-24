@@ -10,18 +10,18 @@ import { FaMobileScreen } from "react-icons/fa6";
 
 const Page = () => {
   return (
-    <div className="min-h-screen  bg-gray-600 p-8 gap-4 flex justify-center  flex-col items-center ">
-      <h3 className="text-lg font-bold text-center w-[600px]">
+    <div className="min-h-screen  bg-gray-200 p-8 gap-4 flex justify-center  flex-col items-center ">
+      <h3 className="text-lg font-bold text-center w-[600px] text-[#00879E]">
         “A champion doesn’t become a champion in the ring; he’s merely
         recognized in the ring. His ‘becoming’ happens during his daily
         routine.” - Joe Louis, boxer.
       </h3>
-      <div className="flex flex-col gap-4 w-[700px] bg-gradient-to-t from-green-800 to-red-500 p-8 rounded-lg shadow-lg">
+      <div className="flex flex-col gap-4 w-[800px] bg-[#00879E] p-8 rounded-lg shadow-lg">
         <div>
-          <h2 className="text-2xl font-bold text-black">
-            Build your daily schedule{" "}
+          <h2 className="text-2xl font-bold  text-center text-white">
+            Build your daily schedule
           </h2>
-          <p className="py-3 text-xl font-bold text-yellow-300 underline">
+          <p className="py-3 text-xl font-bold text-yellow-300">
             {" "}
             Step 1:
           </p>
@@ -41,7 +41,7 @@ const Page = () => {
         </div>
 
         <div>
-          <p className="py-3 text-xl font-bold text-yellow-300 underline">
+          <p className="py-3 text-xl font-bold text-yellow-300">
             {" "}
             Step 2:
           </p>
@@ -54,7 +54,7 @@ const Page = () => {
         </div>
 
         <div>
-          <p className="py-3 text-xl font-bold text-yellow-300 underline">
+          <p className="py-3 text-xl font-bold text-yellow-300">
             {" "}
             Step 3:
           </p>
@@ -67,7 +67,7 @@ const Page = () => {
         </div>
 
         <div>
-          <p className="py-3 text-xl font-bold text-green-400 underline">
+          <p className="py-3 text-xl font-bold text-green-400">
             {" "}
             Tips:
           </p>
@@ -89,90 +89,90 @@ const Page = () => {
         </div>
       </div>
 
-      <div className=" flex flex-col gap-4 w-[700px] bg-gradient-to-t from-green-800 to-red-500 p-8 rounded-lg shadow-lg">
+      <div className=" flex flex-col gap-4 w-[800px]  bg-[#8174A0] p-8 rounded-lg shadow-lg">
         <div>
           <h2 className="text-lg py-3 font-bold ">
             <span className="text-yellow-400">Example: </span>Daily routines for
             becoming successful at the sport event.
           </h2>
 
-          <div className="grid grid-cols-12 place-items-center">
-            <div className="w-full font-bold text-center col-span-4 border-2 border-black px-5 py-2">
+          <div className="grid grid-cols-12 place-items-center gap-5 rounded-lg">
+            <div className="w-full font-bold text-center col-span-4 border-2 border-black rounded-lg my-1 px-5 py-2">
               Task
             </div>
 
-            <div className="w-full font-bold text-center  col-span-4 border-2 border-black px-5 py-2">
+            <div className="w-full font-bold text-center  col-span-4 border-2 border-black rounded-lg my-1 px-5 py-2">
               Duration
             </div>
-            <div className="w-full font-bold text-center col-span-4 border-2 border-black px-5 py-2">
+            <div className="w-full font-bold text-center col-span-4 border-2 border-black rounded-lg my-1  px-5 py-2">
               Time
             </div>
           </div>
 
-          <div className="grid grid-cols-12 place-items-center">
-            <div className="w-full flex items-center gap-3 text-center col-span-4 border border-black px-5 py-2 min-w-[100px] min-h-[40px]">
+          <div className="grid grid-cols-12 place-items-center gap-5">
+            <div className="w-full flex items-center gap-3 text-center col-span-4 border border-black rounded-lg my-1 px-5 py-2 min-w-[100px] min-h-[40px]">
               Sleep <GiNightSleep/>
             </div>
 
-            <div className="w-full text-center  col-span-4 border border-black px-5 py-2 min-w-[100px] min-h-[40px]">
+            <div className="w-full text-center  col-span-4 border border-black rounded-lg my-1 px-5 py-2 min-w-[100px] min-h-[40px]">
               10 hours 
             </div>
 
-            <div className="w-full flex items-center gap-3 text-center col-span-4 border border-black px-5 py-2 min-w-[100px] min-h-[40px]" >
+            <div className="w-full flex items-center gap-3 text-center col-span-4 border border-black rounded-lg my-1 px-5 py-2 min-w-[100px] min-h-[40px]" >
               9.00 pm - 7.00 am <FaRegClock/>
             </div>
           </div>
-          <div className="grid grid-cols-12 place-items-center">
-            <div className="w-full flex items-center gap-3 text-center  col-span-4 border border-black px-5 py-2 min-w-[100px] min-h-[40px]">
+          <div className="grid grid-cols-12 place-items-center gap-5">
+            <div className="w-full flex items-center gap-3 text-center  col-span-4 border border-black rounded-lg my-1 px-5 py-2 min-w-[100px] min-h-[40px]">
             Exercise <LuBicepsFlexed/>
             </div>
 
-            <div className="w-full text-center  col-span-4 border border-black px-5 py-2 min-w-[100px] min-h-[40px]">
+            <div className="w-full text-center  col-span-4 border border-black rounded-lg my-1 px-5 py-2 min-w-[100px] min-h-[40px]">
               1 hours 
             </div>
 
-            <div className="w-full flex items-center gap-3 text-center  col-span-4 border border-black px-5 py-2 min-w-[100px] min-h-[40px]">
+            <div className="w-full flex items-center gap-3 text-center  col-span-4 border border-black rounded-lg my-1 px-5 py-2 min-w-[100px] min-h-[40px]">
             3.00 - 4.00<FaRegClock/>
             </div>
           </div>
-          <div className="grid grid-cols-12 place-items-center">
-            <div className="w-full flex items-center gap-3 text-center  col-span-4 border border-black px-5 py-2">
+          <div className="grid grid-cols-12 place-items-center gap-5">
+            <div className="w-full flex items-center gap-3 text-center  col-span-4 border border-black rounded-lg my-1 px-5 py-2">
             Game <GrGamepad/>
             </div>
 
-            <div className="w-full text-center  col-span-4 border border-black px-5 py-2 min-w-[100px] min-h-[40px]">
+            <div className="w-full text-center  col-span-4 border border-black rounded-lg my-1 px-5 py-2 min-w-[100px] min-h-[40px]">
               2 hours 
             </div>
 
-            <div className="w-full flex items-center gap-3 text-center  col-span-4 border border-black px-5 py-2">
+            <div className="w-full flex items-center gap-3 text-center  col-span-4 border border-black rounded-lg my-1 px-5 py-2">
             4.00 - 6.00<FaRegClock/>
             </div>
           </div>
 
-          <div className="grid grid-cols-12 place-items-center">
-            <div className="w-full flex items-center gap-3 text-center  col-span-4 border border-black px-5 py-2 min-w-[100px] min-h-[40px]">
+          <div className="grid grid-cols-12 place-items-center gap-5">
+            <div className="w-full flex items-center gap-3 text-center  col-span-4 border border-black rounded-lg my-1 px-5 py-2 min-w-[100px] min-h-[40px]">
             practise
             </div>
 
-            <div className="w-full text-center  col-span-4 border border-black px-5 py-2 min-w-[100px] min-h-[40px]">
+            <div className="w-full text-center  col-span-4 border border-black rounded-lg my-1 px-5 py-2 min-w-[100px] min-h-[40px]">
                
             </div>
 
-            <div className="w-full flex items-center gap-3 text-center  col-span-4 border border-black px-5 py-2 min-w-[100px] min-h-[40px]">
+            <div className="w-full flex items-center gap-3 text-center  col-span-4 border border-black rounded-lg my-1 px-5 py-2 min-w-[100px] min-h-[40px]">
            
             </div>
           </div>
 
-          <div className="grid grid-cols-12 place-items-center">
-            <div className="w-full flex items-center gap-3 text-center  col-span-4 border border-black px-5 py-2 min-w-[100px] min-h-[40px]">
+          <div className="grid grid-cols-12 place-items-center gap-5">
+            <div className="w-full flex items-center gap-3 text-center  col-span-4 border border-black rounded-lg my-1 px-5 py-2 min-w-[100px] min-h-[40px]">
             Screen time <FaMobileScreen/>
             </div>
 
-            <div className="w-full text-center  col-span-4 border border-black px-5 py-2 min-w-[100px] min-h-[40px]">
+            <div className="w-full text-center  col-span-4 border border-black rounded-lg px-5 my-1 py-2 min-w-[100px] min-h-[40px]">
             30 min
             </div>
 
-            <div className="w-full flex items-center gap-3 text-center  col-span-4 border border-black px-5 py-2 min-w-[100px] min-h-[40px]">
+            <div className="w-full flex items-center gap-3 text-center  col-span-4 border border-black rounded-lg px-5 my-1 py-2 min-w-[100px] min-h-[40px]">
             6.30 - 7.00 <FaRegClock/>
             </div>
           </div>

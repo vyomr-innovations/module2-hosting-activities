@@ -19,13 +19,13 @@ export default function Home() {
       {
         NavbarData.map((item,index)=>(
           <div key={index} className="grid grid-cols-12 gap-4 min-w-[500px] place-items-center text-center">
-          <div className="col-span-3 min-w-[100px] border border-black bg-red-400 py-1 px-4 text-black rounded-lg">
+          <div className="col-span-3 min-w-[100px] border border-black bg-red-400 py-1 px-4 font-bold text-black rounded-lg">
             {index + 1}
           </div>
-          <div  className="col-span-6 min-w-[500px] border border-black bg-red-400 py-1 px-4 rounded-lg">
+          <div  className="col-span-6 min-w-[500px] border border-black bg-red-400 font-bold py-1 px-4 rounded-lg">
             {item.activity}
           </div>
-          <div className="col-span-3 w-full border text-black border-black bg-red-400 py-1 px-4 rounded-lg">
+          <div className="col-span-3 w-full border text-black border-black bg-red-400 py-1 font-bold px-4 rounded-lg">
           <Link  href={`/${item.link}`}>{item.link}</Link>
           </div>
         </div>
