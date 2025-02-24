@@ -10,7 +10,7 @@ const Page = () => {
                 <Image src="/image/C10-L1-A3.jpg" className='rounded-lg shadow-lg' width={400} height={400} alt='image'/>
             </div>
             <div className="col-span-6 w-full ">
-            <ul className='list-decimal text-lg font-bold ]'>
+            <ul className='list-decimal text-2xl space-y-3 font-bold '>
                 <li>Imagine you have a wand to blow bubbles.</li>
                 <li>Take a deep breath in through your nose.</li>
                 <li className='pr-[200px]'>Slowly breathe out through your mouth as if you are blowing a bubble through a wand.</li>

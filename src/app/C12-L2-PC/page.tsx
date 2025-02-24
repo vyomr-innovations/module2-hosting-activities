@@ -22,21 +22,21 @@ const data = [
 const Page = () => {
   return (
     <div className="min-h-screen bg-gray-400 text-white flex justify-center flex-col items-center p-5">
-      <h3 className="text-white font-bold text-4xl pb-[30px]">Chain of strength</h3>
-        <div className="grid grid-cols-12 place-items-center">
+      <h3 className="text-white font-bold text-4xl ">Chain of strength</h3>
+        <div className="grid grid-cols-10  place-items-center p-5">
       {data.map((item, index) => (
           <>
-          <div key={index} className="col-span-4 flex items-center justify-center gap-3 p-5">
+          <div key={index} className="col-span-2 flex items-center justify-center  p-5">
             <h3 className="text-xl text-yellow-100  font-bold ">{item.step}</h3>
             <Image
               src={item.img}
               className=""
-              width={150}
+              width={120}
               height={100}
               alt="image"
             />
           </div>
-          <div className="col-span-8  p-5">
+          <div className="col-span-8 w-full ">
             <p className="font-bold text-lg">
              {item.text}
 

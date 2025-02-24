@@ -16,23 +16,22 @@ const Page = () => {
         recognized in the ring. His ‘becoming’ happens during his daily
         routine.” - Joe Louis, boxer.
       </h3>
-      <div className="flex flex-col gap-4 w-[800px] bg-[#00879E] p-8 rounded-lg shadow-lg">
+      <div className="flex flex-col gap-4 max-w-[950px] bg-[#00879E] p-8 rounded-lg shadow-lg">
         <div>
           <h2 className="text-2xl font-bold  text-center text-white">
             Build your daily schedule
           </h2>
           <p className="py-3 text-xl font-bold text-yellow-300">
-            {" "}
             Step 1:
           </p>
-          <ul className="list-disc text-lg  font-bold text-white">
+          <ul className="list-disc text-lg space-y-2  font-bold text-white">
             <li>
               Separate your life into categories (health, study, sports, etc) -
               what needs to be changed. Write down goals for each category.
             </li>
             <li>
               Track everything you do in 15 mins intervals. Where are you
-              wasting time? [Screen time? Phone time?]
+              wasting time? Screen time? Phone time?
             </li>
             <li>
               Pick 3 behaviours you need to change in order to reach your goal.{" "}
@@ -71,7 +70,7 @@ const Page = () => {
             {" "}
             Tips:
           </p>
-          <ul className="list-disc text-lg  font-bold text-white">
+          <ul className="list-disc text-lg space-y-2  font-bold text-white">
             <li>
               Set an alarm as reminders, to boost consistency. Do things at the
               same time every day. Whether it’s waking up, exercising, or
@@ -79,17 +78,17 @@ const Page = () => {
               your routine’s power
             </li>
             <li>
-              Keep required items handy. [For example, if you have a dedicated
+              Keep required items handy. For example, if you have a dedicated
               game practice time, keep everything you need - the
               equipment/gears/dress - handy, so that no time is lost in
-              searching for this].
+              searching for this.
             </li>
             <li>Track your progress, reward yourself for achievements.</li>
           </ul>
         </div>
       </div>
 
-      <div className=" flex flex-col gap-4 w-[800px]  bg-[#8174A0] p-8 rounded-lg shadow-lg">
+      <div className=" flex flex-col gap-4 min-w-[950px]  bg-[#8174A0] p-8 rounded-lg shadow-lg">
         <div>
           <h2 className="text-lg py-3 font-bold ">
             <span className="text-yellow-400">Example: </span>Daily routines for
@@ -137,7 +136,7 @@ const Page = () => {
           </div>
           <div className="grid grid-cols-12 place-items-center gap-5">
             <div className="w-full flex items-center gap-3 text-center  col-span-4 border border-black rounded-lg my-1 px-5 py-2">
-            Game <GrGamepad/>
+            Game Practice <GrGamepad/>
             </div>
 
             <div className="w-full text-center  col-span-4 border border-black rounded-lg my-1 px-5 py-2 min-w-[100px] min-h-[40px]">
@@ -149,19 +148,7 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-12 place-items-center gap-5">
-            <div className="w-full flex items-center gap-3 text-center  col-span-4 border border-black rounded-lg my-1 px-5 py-2 min-w-[100px] min-h-[40px]">
-            practise
-            </div>
-
-            <div className="w-full text-center  col-span-4 border border-black rounded-lg my-1 px-5 py-2 min-w-[100px] min-h-[40px]">
-               
-            </div>
-
-            <div className="w-full flex items-center gap-3 text-center  col-span-4 border border-black rounded-lg my-1 px-5 py-2 min-w-[100px] min-h-[40px]">
-           
-            </div>
-          </div>
+         
 
           <div className="grid grid-cols-12 place-items-center gap-5">
             <div className="w-full flex items-center gap-3 text-center  col-span-4 border border-black rounded-lg my-1 px-5 py-2 min-w-[100px] min-h-[40px]">
