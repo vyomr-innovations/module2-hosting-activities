@@ -4,7 +4,7 @@ const Page = () => {
   return (
     <div className='min-h-screen bg-[#F8FAFC] flex justify-start items-center flex-col'>
         <h4 className='text-black text-3xl h-[100px] pt-10 '>Safety Rules</h4>
-        <div className='w-[600px] rounded-lg shadow-black shadow-md '>
+        <div className='w-[700px] rounded-lg shadow-black shadow-md '>
             <video src="/videos/L1C10-safety.mp4" controls autoPlay className='w-full h-full'></video>
         </div>
       
