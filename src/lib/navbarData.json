@@ -26,5 +26,9 @@
     {
         "link" :"C10-L1-WRMUP",
         "activity":"Freeze dance"
+    },
+    {
+        "link" :"C10-L3-AA",
+        "activity":"Turtle technique"
     }
 ]
