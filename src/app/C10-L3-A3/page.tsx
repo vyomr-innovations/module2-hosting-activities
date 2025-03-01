@@ -3,8 +3,8 @@ import React from "react";
 
 const Page = () => {
   return (
-    <div className="min-h-screen bg-gray-400 text-white flex justify-center flex-col items-center">
-      <h3 className="text-3xl text-white font-bold pb-[60px] "> Snake Breathing</h3>
+    <div className="min-h-screen bg-[#F8FAFC] text-black flex justify-center flex-col items-center">
+      <h3 className="text-3xl  font-bold pb-[60px] "> Snake Breathing</h3>
       <div className="grid grid-cols-12 place-items-center">
         <div className="col-span-6">
           <Image src="/image/C10-L3-A3.jpg" width={400} height={400} className="rounded-lg shadow-xl" alt="image" />
