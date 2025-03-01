@@ -22,5 +22,9 @@
     {
         "link" :"C10-L1-A1A",
         "activity":"Safety Rules"
+    },
+    {
+        "link" :"C10-L1-WRMUP",
+        "activity":"Freeze dance"
     }
 ]
