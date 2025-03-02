@@ -20,10 +20,10 @@ const Page = () => {
   const BoxData = [
     {
       bgColor: "#A0C878",
-      name: "1",
+      name: "Small Problems",
     },
     {
-      bgColor: "#A0C878",
+      bgColor: "#3A7D44",
       name: "2",
     },
     {
@@ -36,7 +36,7 @@ const Page = () => {
     },
     {
       bgColor: "#E52020",
-      name: "5",
+      name: "Big Problems",
     },
   ];
 
@@ -57,27 +57,27 @@ const Page = () => {
   return (
     <div className="min-h-screen bg-[#F8FAFC] flex justify-center flex-col p-5 items-center">
         <h3 className="text-3xl text-black py-4 h-[100px]">Small Problems OR Big Problems </h3>
-      <div className="grid grid-cols-12  w-full place-items-center">
-        <div className="col-span-4 w-full flex flex-col gap-1 h-[450px] overflow-y-scroll">
+      <div className="grid grid-cols-12  w-full place-items-center ">
+        <div className="col-span-6  flex flex-col gap-1 h-[500px] overflow-y-scroll">
           {dragData.map((item, index) => (
             <h3
               key={index}
               draggable
               onDragStart={(e) => handleDrag(e, item.text)}
-              className="text-black text-lg bg-blue-300 px-5 py-1 rounded-lg"
+              className="text-black text-lg bg-blue-300 px-5 py-1 rounded-lg cursor-grab active:cursor-grabbing"
             >
               {item.text}
             </h3>
           ))}
         </div>
-        <div className="col-span-8 flex justify-center items-center gap-2 flex-wrap">
+        <div className="col-span-6 w-full flex justify-center items-center gap-1  flex-col-reverse">
           {BoxData.map((item, index) => (
             <div
               onDragOver={(e) => e.preventDefault()}
               onDrop={(e) => handleDrop(e, index)}
               style={{ backgroundColor: `${item.bgColor}` }}
               key={index}
-              className="w-[280px] min-h-[200px]  border rounded-lg p-2"
+              className="w-[500px] min-h-[100px]  border rounded-lg p-2"
             >
               <h3 className="text-center">{item.name}</h3>
               {dropData[index]?.map((dropI, dropIn) => (
