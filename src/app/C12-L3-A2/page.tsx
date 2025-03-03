@@ -20,7 +20,7 @@ const Page = () => {
   const BoxData = [
     {
       bgColor: "#A0C878",
-      name: "Small Problems",
+      name: "Small Problems (1)",
     },
     {
       bgColor: "#3A7D44",
@@ -36,7 +36,7 @@ const Page = () => {
     },
     {
       bgColor: "#E52020",
-      name: "Big Problems",
+      name: "Big Problems (5)",
     },
   ];
 
