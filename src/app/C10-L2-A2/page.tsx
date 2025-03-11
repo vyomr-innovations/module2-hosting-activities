@@ -5,13 +5,13 @@ const Page = () => {
   const [isFirstScreen, setIsFirstScreen] = useState("mainPage");
   const [dropData, setDropData] = useState<{ [key: number]: string[] }>({});
   const [taskData, setTaskData] = useState([
-    { name: "Camilla" },
     { name: "sing" },
-    { name: "sing in front of others" },
     { name: "others will laugh or think she is a bad singer" },
     { name: "her fear" },
+    { name: "Camilla" },
     { name: "sing with eyes closed" },
     { name: "face fear and practise" },
+    { name: "sing in front of others" },
   ]);
 
   const QustionsData =[
