@@ -50,5 +50,9 @@
     {
         "link" :"C12-L3-PC",
         "activity":"Big Deal or Small Deal"
+    },
+     {
+        "link" :"C10-L2-A2",
+        "activity":"character wheel"
     }
 ]
