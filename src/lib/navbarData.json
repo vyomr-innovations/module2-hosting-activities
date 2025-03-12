@@ -54,5 +54,13 @@
      {
         "link" :"C10-L2-A2",
         "activity":"character wheel"
+    },
+    {
+        "link" :"C14-L2-A3",
+        "activity":"Six Word Story"
+    },
+     {
+        "link" :"C14-L3-A3",
+        "activity":"Innovation Challenge"
     }
 ]
