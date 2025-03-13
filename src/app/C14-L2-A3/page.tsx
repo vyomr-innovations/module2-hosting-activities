@@ -22,7 +22,7 @@ const Page = () => {
             ].map((i, index) => (
               <h3
                 key={index}
-                className="effect relative overflow-hidden after:bg-red-900 bg-orange-300 text-orange-700 text-2xl font-bold px-8 py-3 w-[180px] text-center shadow-[#0000009a] rounded-lg  shadow-inner"
+                className=" relative overflow-hidden after:bg-red-900 bg-orange-300 text-orange-700 text-2xl font-bold px-8 py-3 w-[180px] text-center shadow-[#0000009a] rounded-lg  shadow-inner"
               >
                 {i}
               </h3>
@@ -42,7 +42,7 @@ const Page = () => {
             ].map((i, index) => (
               <h3
                 key={index}
-                className=" effect relative overflow-hidden after:bg-green-900 bg-green-300 text-green-800 text-2xl font-bold px-8 py-3 w-[180px] text-center shadow-[#0000009a] rounded-lg  shadow-inner"
+                className="  relative overflow-hidden after:bg-green-900 bg-green-300 text-green-800 text-2xl font-bold px-8 py-3 w-[180px] text-center shadow-[#0000009a] rounded-lg  shadow-inner"
               >
                 {i}
               </h3>
@@ -62,7 +62,7 @@ const Page = () => {
             ].map((i, index) => (
               <h3
                 key={index}
-                className=" effect relative overflow-hidden after:bg-blue-900 bg-blue-300 text-blue-800 text-2xl font-bold px-8 py-3 w-[180px] text-center shadow-[#0000009a] rounded-lg  shadow-inner"
+                className="  relative overflow-hidden after:bg-blue-900 bg-blue-300 text-blue-800 text-2xl font-bold px-8 py-3 w-[180px] text-center shadow-[#0000009a] rounded-lg  shadow-inner"
               >
                 {i}
               </h3>
@@ -82,7 +82,7 @@ const Page = () => {
             ].map((i, index) => (
               <h3
                 key={index}
-                className="effect relative overflow-hidden after:bg-violet-900 bg-violet-300 text-violet-800 text-2xl font-bold px-8 py-3 w-[180px] text-center shadow-[#0000009a] rounded-lg  shadow-inner"
+                className=" relative overflow-hidden after:bg-violet-900 bg-violet-300 text-violet-800 text-2xl font-bold px-8 py-3 w-[180px] text-center shadow-[#0000009a] rounded-lg  shadow-inner"
               >
                 {i}
               </h3>
