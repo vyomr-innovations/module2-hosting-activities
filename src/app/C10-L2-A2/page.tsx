@@ -39,7 +39,7 @@ const Page = () => {
         name: "Overcomes fear by",
         val:"sing with eyes closed"
     },{
-        name: "Overcomes fear by",
+        name: "We learn to instead of avoiding",
         val:"face fear and practise"
     }
   ]
