@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Quadrantsdata from "@/Task_Sorting_5/quadrantsdata.json";
 import taskData from "@/Task_Sorting_5/taskData.json";
+import PopUpDilog from "@/components/popUpDilog";
 
 interface Quadrant {
   text: string;
@@ -12,12 +13,19 @@ interface Quadrant {
 
 const Quadrants = ({
   setIsCorrect,
+  open,
   setAvailbleTask,
-  availbleTask
+  availbleTask,
+  setIsFirstScreen,
+  setOpen
 }: {
   setAvailbleTask:(tasks :typeof taskData) =>void;
   availbleTask: typeof taskData;
+  open: boolean;
+  setOpen: (value: boolean) => void;
     setIsCorrect: (value: boolean) => void;
+    setIsFirstScreen: (value: string) => void;
+
 }) => {
   const [quadrantItem, setQuadrantItem] = useState<Quadrant[]>(Quadrantsdata);
 
@@ -63,7 +71,7 @@ const Quadrants = ({
           key={index}
           onDragOver={(e) => e.preventDefault()}
           onDrop={(e) => handleDropTask(e, index, item.correct)}
-          className={`col-span-6 w-[400px] min-h-[200px] h-auto    rounded-lg flex items-center justify-center flex-col gap-5 text-lg`}
+          className={`col-span-6 w-[400px] min-h-[200px] p-3 h-auto    rounded-lg flex items-center justify-center flex-col gap-5 text-lg`}
           style={{ backgroundColor: `${item.border}` }}
         >
           <h1 className="text-lg text-white">{item.text}</h1>
@@ -77,6 +85,7 @@ const Quadrants = ({
           ))}
         </div>
       ))}
+      <PopUpDilog open={open} setIsFirstScreen={setIsFirstScreen} setOpen={setOpen} />
     </div>
   );
 };

@@ -1,0 +1,51 @@
+[
+    {
+        "clock":"06:30",
+        "tasks":"Wake up and get read"
+
+    },
+    {
+        "clock":"07:30",
+        "tasks":"Breakfast"
+    },
+    {
+        "clock":"08:30",
+        "tasks":"Study/school time"
+    },
+    {
+        "clock":"13:30",
+        "tasks":"Lunch"
+    },
+    {
+        "clock":"14:30",
+        "tasks":"Finish Homework"
+    },
+    {
+        "clock":"16:30",
+        "tasks":"Creative time/Play outside"
+    },
+    {
+        "clock":"18:00",
+        "tasks":"Daily Chores"
+    },
+    {
+        "clock":"18:30",
+        "tasks":"Take a short stretch or walk break"
+    } ,
+     {
+        "clock":"19:30",
+        "tasks":"Dinner"
+    },
+     {
+        "clock":"20:00",
+        "tasks":"Prepare for next day"
+    },
+    {
+        "clock":"20:20",
+        "tasks":"Screen time"
+    },
+     {
+        "clock":"20:30",
+        "tasks":"Bedtime"
+    }
+]
