@@ -1,5 +1,5 @@
 "use client";
-import React, { useCallback, useState } from "react";
+import React, { useState } from "react";
 import shaduleData from "@/Task_Sorting_5/shadule.json";
 
 const Shadule = () => {
@@ -16,24 +16,33 @@ const Shadule = () => {
     setTask(copyShaduleTask);
   };
 
-  const addNewRow = useCallback(() => {
+  const addNewRow = () => {
     const newRow = { clock: "00:00", tasks: "" };
     setTask((prev) => [...prev, newRow]);
-  }, []);
+  };
 
-  const handleDelet = (index:number)=>{
-   const filterTask= task.filter((_,indexfilter)=>index != indexfilter)
-setTask(filterTask)
-  }
+  const handleOnBlur = () => {
+    const sortingTime = [...task].sort((a, b) =>
+      a.clock.localeCompare(b.clock)
+    );
+    setTask(sortingTime);
+  };
+
+  const handleDelet = (index: number) => {
+    const filterTask = task.filter((_, indexfilter) => index != indexfilter);
+    setTask(filterTask);
+  };
   return (
     <div className="min-h-screen flex justify-start items-center flex-col p-5 gap-6 bg-[#F8FAFC] ">
       <h4 className="text-5xl py-5">Task List</h4>
-      <button
-        onClick={addNewRow}
-        className="text-white bg-green-500 py-2 px-3 rounded-lg "
-      >
-        Add Row
-      </button>
+      <div className="flex gap-5">
+        <button
+          onClick={addNewRow}
+          className="text-white bg-green-500 py-2 px-3 rounded-lg "
+        >
+          Add Row
+        </button>
+      </div>
       <div>
         <div className="grid grid-cols-12 min-w-[800px] place-items-center gap-2 bg-red-500 py-2">
           <div className="col-span-3 text-white text-xl">Time</div>
@@ -48,6 +57,7 @@ setTask(filterTask)
             <div className="col-span-3 text-black text-xl">
               <input
                 type="time"
+                onBlur={handleOnBlur}
                 value={item.clock}
                 onChange={(e) => handleClockChange(index, e.target.value)}
                 title="clock"
@@ -63,7 +73,10 @@ setTask(filterTask)
               />
             </div>
             <div className="col-span-3 text-black text-xl">
-              <button onClick={()=>handleDelet(index)} className="bg-red-400 text-center text-white px-3 py-1 rounded-lg">
+              <button
+                onClick={() => handleDelet(index)}
+                className="bg-red-400 text-center text-white px-3 py-1 rounded-lg"
+              >
                 Delete
               </button>
             </div>

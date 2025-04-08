@@ -78,7 +78,7 @@ const Quadrants = ({
           {item.task.map((task, idx) => (
             <h1
               key={idx}
-              className="text-sm font-bold border bg-red-400  p-2 rounded-xl"
+              className="text-sm font-bold border bg-black text-white p-2 rounded-xl"
             >
               {task}
             </h1>
