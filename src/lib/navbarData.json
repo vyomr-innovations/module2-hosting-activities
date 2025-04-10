@@ -71,5 +71,8 @@
       {
         "link" :"Task_Sorting_2",
         "activity":"Task Sorting Puzzle"
+    } ,{
+        "link" :"sorting_alphabetical_order",
+        "activity":"Sort in Alphabetical Order"
     }
 ]
